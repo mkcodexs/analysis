@@ -1,0 +1,727 @@
+
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Analisa Hartanah Sepang, Selangor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8fafc;
+        }
+        .page-break {
+            page-break-after: always;
+        }
+        .chart-container {
+            position: relative;
+            height: 300px;
+            width: 100%;
+        }
+        .risk-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-8 px-4 md:px-12">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div>
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Laporan Analisa Hartanah</h1>
+                    <h2 class="text-xl md:text-2xl font-semibold">Sepang, Selangor</h2>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <p class="text-sm md:text-base">Disediakan pada: <span class="font-semibold" id="current-date"></span></p>
+                    <p class="text-sm md:text-base">Oleh: Jabatan Analisa Hartanah</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Table of Contents -->
+    <section class="max-w-6xl mx-auto my-8 px-4 md:px-12">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Kandungan</h2>
+            <ul class="space-y-2">
+                <li class="flex items-center">
+                    <span class="bg-blue-800 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3">1</span>
+                    <a href="#risk-factors" class="text-blue-800 hover:text-blue-600 font-medium">Faktor Risiko & Cabaran</a>
+                </li>
+                <li class="flex items-center">
+                    <span class="bg-blue-800 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3">2</span>
+                    <a href="#future-projections" class="text-blue-800 hover:text-blue-600 font-medium">Unjuran Masa Depan & Cadangan</a>
+                </li>
+                <li class="flex items-center">
+                    <span class="bg-blue-800 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3">3</span>
+                    <a href="#data-sources" class="text-blue-800 hover:text-blue-600 font-medium">Lampiran Data & Sumber Rujukan</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Executive Summary -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Ringkasan Eksekutif</h2>
+            <p class="mb-4">Laporan ini menganalisis pasaran hartanah di Sepang, Selangor dengan fokus kepada faktor risiko, unjuran masa depan, dan cadangan strategik untuk pelabur dan pemaju. Sepang, yang terkenal dengan Lapangan Terbang Antarabangsa Kuala Lumpur (KLIA) dan Litar Antarabangsa Sepang, telah mengalami pertumbuhan pesat dalam sektor hartanah sejak beberapa tahun kebelakangan ini.</p>
+            <p>Analisis ini menunjukkan bahawa walaupun terdapat cabaran seperti kesan pandemik COVID-19 dan ketidakstabilan ekonomi global, Sepang menawarkan peluang pelaburan yang menarik disebabkan oleh pembangunan infrastruktur yang berterusan, kedudukan strategik, dan potensi pertumbuhan jangka panjang.</p>
+        </div>
+    </section>
+
+    <!-- Risk Factors Section -->
+    <section id="risk-factors" class="max-w-6xl mx-auto my-8 px-4 md:px-12">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <div class="flex items-center mb-6">
+                <div class="bg-red-100 p-2 rounded-full mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-blue-800">1. Faktor Risiko & Cabaran</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-gradient-to-br from-red-50 to-white p-5 rounded-lg border border-red-100 shadow-sm risk-card transition duration-300">
+                    <h3 class="text-lg font-semibold text-red-700 mb-3">Kebergantungan pada Sektor Penerbangan</h3>
+                    <p>Ekonomi Sepang sangat bergantung kepada KLIA dan industri berkaitan penerbangan. Gangguan dalam sektor penerbangan (seperti semasa pandemik COVID-19) boleh memberi kesan negatif kepada permintaan hartanah di kawasan ini.</p>
+                    <div class="mt-4 flex items-center">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-red-600 h-2.5 rounded-full" style="width: 85%"></div>
+                        </div>
+                        <span class="ml-2 text-sm font-medium text-red-700">85%</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-red-50 to-white p-5 rounded-lg border border-red-100 shadow-sm risk-card transition duration-300">
+                    <h3 class="text-lg font-semibold text-red-700 mb-3">Bekalan Berlebihan</h3>
+                    <p>Pembangunan pesat di kawasan Sepang telah menyebabkan risiko bekalan berlebihan, terutamanya dalam segmen kondominium dan pangsapuri servis. Ini boleh mengakibatkan kadar kekosongan yang tinggi dan tekanan ke bawah pada harga sewa.</p>
+                    <div class="mt-4 flex items-center">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-red-600 h-2.5 rounded-full" style="width: 70%"></div>
+                        </div>
+                        <span class="ml-2 text-sm font-medium text-red-700">70%</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-red-50 to-white p-5 rounded-lg border border-red-100 shadow-sm risk-card transition duration-300">
+                    <h3 class="text-lg font-semibold text-red-700 mb-3">Kekurangan Kemudahan Awam</h3>
+                    <p>Beberapa kawasan di Sepang masih kekurangan kemudahan awam seperti hospital, pusat membeli-belah, dan institusi pendidikan berbanding dengan kawasan bandar lain di Selangor. Ini boleh mengehadkan daya tarikan untuk pembeli rumah keluarga.</p>
+                    <div class="mt-4 flex items-center">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-red-600 h-2.5 rounded-full" style="width: 65%"></div>
+                        </div>
+                        <span class="ml-2 text-sm font-medium text-red-700">65%</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-red-50 to-white p-5 rounded-lg border border-red-100 shadow-sm risk-card transition duration-300">
+                    <h3 class="text-lg font-semibold text-red-700 mb-3">Ketidakstabilan Ekonomi Global</h3>
+                    <p>Ketidakpastian ekonomi global dan kenaikan kadar faedah boleh menjejaskan permintaan hartanah, terutamanya dari pelabur asing yang sebelum ini tertarik dengan hartanah berhampiran KLIA dan Cyberjaya.</p>
+                    <div class="mt-4 flex items-center">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-red-600 h-2.5 rounded-full" style="width: 75%"></div>
+                        </div>
+                        <span class="ml-2 text-sm font-medium text-red-700">75%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-blue-50 p-6 rounded-lg border border-blue-100 mb-6">
+                <h3 class="text-lg font-semibold text-blue-800 mb-3">Analisis Cabaran Utama</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                        <thead class="bg-blue-800 text-white">
+                            <tr>
+                                <th class="py-3 px-4 text-left">Cabaran</th>
+                                <th class="py-3 px-4 text-left">Impak</th>
+                                <th class="py-3 px-4 text-left">Strategi Mitigasi</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="py-3 px-4">Persaingan dari kawasan pembangunan berdekatan</td>
+                                <td class="py-3 px-4">Tinggi</td>
+                                <td class="py-3 px-4">Fokus pada USP Sepang (KLIA, Litar F1, Cyberjaya)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Kekurangan pengangkutan awam yang efisien</td>
+                                <td class="py-3 px-4">Sederhana</td>
+                                <td class="py-3 px-4">Advokasi untuk peningkatan sambungan ERL dan bas</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Kenaikan kos pembinaan</td>
+                                <td class="py-3 px-4">Tinggi</td>
+                                <td class="py-3 px-4">Inovasi dalam teknik pembinaan dan bahan</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Perubahan dasar kerajaan</td>
+                                <td class="py-3 px-4">Sederhana</td>
+                                <td class="py-3 px-4">Penglibatan aktif dengan pihak berkuasa tempatan</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="chart-container mb-6">
+                <canvas id="riskChart"></canvas>
+            </div>
+
+            <div class="bg-yellow-50 p-5 rounded-lg border border-yellow-100">
+                <div class="flex items-center mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-600 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                    </svg>
+                    <h3 class="text-lg font-semibold text-yellow-800">Kesimpulan Risiko</h3>
+                </div>
+                <p>Walaupun terdapat beberapa cabaran yang signifikan, risiko-risiko ini boleh diuruskan dengan strategi yang betul. Pelabur dan pemaju perlu memberi perhatian khusus kepada kebergantungan kawasan ini pada sektor penerbangan dan pelancongan, serta memantau dengan teliti trend bekalan dan permintaan untuk mengelakkan pelaburan dalam segmen yang telah tepu.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Projections Section -->
+    <section id="future-projections" class="max-w-6xl mx-auto my-8 px-4 md:px-12">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <div class="flex items-center mb-6">
+                <div class="bg-green-100 p-2 rounded-full mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-blue-800">2. Unjuran Masa Depan & Cadangan</h2>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-700 mb-4">Unjuran Pertumbuhan Harga Hartanah (2023-2028)</h3>
+                <div class="chart-container mb-6">
+                    <canvas id="priceProjectionChart"></canvas>
+                </div>
+                <p class="text-gray-700 mb-4">Berdasarkan analisis trend dan faktor makroekonomi, kami menjangkakan pertumbuhan harga hartanah di Sepang akan stabil pada kadar 3-5% setahun untuk tempoh lima tahun akan datang. Segmen hartanah kediaman mampu milik dan hartanah industri dijangka menunjukkan prestasi yang lebih baik berbanding segmen mewah.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-gradient-to-br from-green-50 to-white p-5 rounded-lg border border-green-100 shadow-sm transition duration-300 hover:shadow-md">
+                    <h3 class="text-lg font-semibold text-green-700 mb-3">Pembangunan Infrastruktur</h3>
+                    <p class="mb-3">Pelaburan berterusan dalam infrastruktur di sekitar KLIA dan Cyberjaya dijangka meningkatkan daya tarikan Sepang sebagai hab perniagaan dan kediaman.</p>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                        <li>Sambungan pengangkutan awam yang lebih baik</li>
+                        <li>Peningkatan rangkaian jalan raya</li>
+                        <li>Pembangunan kemudahan awam baharu</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-white p-5 rounded-lg border border-green-100 shadow-sm transition duration-300 hover:shadow-md">
+                    <h3 class="text-lg font-semibold text-green-700 mb-3">Trend Permintaan</h3>
+                    <p class="mb-3">Permintaan dijangka meningkat untuk hartanah yang menawarkan:</p>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                        <li>Kemudahan bekerja dari rumah</li>
+                        <li>Kawasan hijau dan kemudahan rekreasi</li>
+                        <li>Kecekapan tenaga dan ciri-ciri lestari</li>
+                        <li>Akses mudah ke pusat pekerjaan utama</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-blue-50 p-6 rounded-lg border border-blue-100 mb-8">
+                <h3 class="text-xl font-semibold text-blue-800 mb-4">Cadangan Strategik</h3>
+                
+                <div class="mb-6">
+                    <h4 class="text-lg font-medium text-blue-700 mb-2">Untuk Pelabur:</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-lg border border-blue-100">
+                            <div class="flex items-center mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <h5 class="font-medium">Fokus pada Hartanah Industri</h5>
+                            </div>
+                            <p class="text-sm text-gray-700">Pertimbangkan pelaburan dalam hartanah industri dan gudang di sekitar KLIA dan Cyberjaya untuk memanfaatkan pertumbuhan e-dagang dan logistik.</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg border border-blue-100">
+                            <div class="flex items-center mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <h5 class="font-medium">Hartanah Kediaman Mampu Milik</h5>
+                            </div>
+                            <p class="text-sm text-gray-700">Rumah teres dan apartmen mampu milik yang mensasarkan pembeli rumah pertama dan keluarga muda menawarkan potensi pertumbuhan yang baik.</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg border border-blue-100">
+                            <div class="flex items-center mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <h5 class="font-medium">Strategi Jangka Panjang</h5>
+                            </div>
+                            <p class="text-sm text-gray-700">Amalkan pendekatan pelaburan jangka panjang (5-10 tahun) untuk memaksimumkan pulangan dari pembangunan infrastruktur yang sedang berjalan.</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg border border-blue-100">
+                            <div class="flex items-center mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <h5 class="font-medium">Kepelbagaian Portfolio</h5>
+                            </div>
+                            <p class="text-sm text-gray-700">Pelbagaikan portfolio hartanah di seluruh Sepang untuk mengurangkan risiko yang berkaitan dengan kawasan atau segmen tertentu.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-medium text-blue-700 mb-2">Untuk Pemaju:</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-lg border border-blue-100">
+                            <div class="flex items-center mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <h5 class="font-medium">Pembangunan Bercampur</h5>
+                            </div>
+                            <p class="text-sm text-gray-700">Fokus pada pembangunan bercampur yang menggabungkan kediaman, komersial, dan kemudahan rekreasi untuk menarik pembeli yang mencari gaya hidup bersepadu.</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg border border-blue-100">
+                            <div class="flex items-center mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <h5 class="font-medium">Pembangunan Lestari</h5>
+                            </div>
+                            <p class="text-sm text-gray-700">Terapkan ciri-ciri lestari dan kecekapan tenaga dalam pembangunan baharu untuk memenuhi permintaan yang semakin meningkat untuk hartanah mesra alam.</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg border border-blue-100">
+                            <div class="flex items-center mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <h5 class="font-medium">Kemudahan Bekerja Dari Rumah</h5>
+                            </div>
+                            <p class="text-sm text-gray-700">Reka bentuk hartanah kediaman dengan ruang kerja yang khusus dan kemudahan internet berkelajuan tinggi untuk memenuhi trend bekerja dari rumah.</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg border border-blue-100">
+                            <div class="flex items-center mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <h5 class="font-medium">Perkongsian Awam-Swasta</h5>
+                            </div>
+                            <p class="text-sm text-gray-700">Terokai peluang perkongsian dengan pihak berkuasa tempatan untuk membangunkan infrastruktur dan kemudahan awam yang diperlukan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-green-50 p-6 rounded-lg border border-green-100">
+                <h3 class="text-xl font-semibold text-green-800 mb-4">Kawasan Berpotensi Tinggi</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                    <div class="bg-white p-4 rounded-lg border border-green-100 shadow-sm">
+                        <h4 class="font-medium text-green-700 mb-2">Cyberjaya Selatan</h4>
+                        <div class="flex items-center mb-2">
+                            <span class="text-sm font-semibold bg-green-100 text-green-800 px-2 py-1 rounded">Potensi Pertumbuhan: Tinggi</span>
+                        </div>
+                        <p class="text-sm text-gray-700">Kawasan ini dijangka mendapat manfaat daripada perkembangan Cyberjaya dan peningkatan sambungan pengangkutan.</p>
+                    </div>
+                    
+                    <div class="bg-white p-4 rounded-lg border border-green-100 shadow-sm">
+                        <h4 class="font-medium text-green-700 mb-2">Salak Tinggi</h4>
+                        <div class="flex items-center mb-2">
+                            <span class="text-sm font-semibold bg-green-100 text-green-800 px-2 py-1 rounded">Potensi Pertumbuhan: Sederhana-Tinggi</span>
+                        </div>
+                        <p class="text-sm text-gray-700">Dengan stesen ERL sedia ada dan harga yang lebih berpatutan, kawasan ini menawarkan nilai yang baik untuk pelabur jangka panjang.</p>
+                    </div>
+                    
+                    <div class="bg-white p-4 rounded-lg border border-green-100 shadow-sm">
+                        <h4 class="font-medium text-green-700 mb-2">KLIA Aeropolis</h4>
+                        <div class="flex items-center mb-2">
+                            <span class="text-sm font-semibold bg-green-100 text-green-800 px-2 py-1 rounded">Potensi Pertumbuhan: Sangat Tinggi</span>
+                        </div>
+                        <p class="text-sm text-gray-700">Pembangunan KLIA Aeropolis dijangka menjadi pemangkin utama untuk pertumbuhan hartanah komersial dan industri di kawasan ini.</p>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <canvas id="areaComparisonChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Sources Section -->
+    <section id="data-sources" class="max-w-6xl mx-auto my-8 px-4 md:px-12">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <div class="flex items-center mb-6">
+                <div class="bg-purple-100 p-2 rounded-full mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-blue-800">3. Lampiran Data & Sumber Rujukan</h2>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-blue-700 mb-4">Data Statistik Utama</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                        <thead class="bg-blue-800 text-white">
+                            <tr>
+                                <th class="py-3 px-4 text-left">Metrik</th>
+                                <th class="py-3 px-4 text-left">2020</th>
+                                <th class="py-3 px-4 text-left">2021</th>
+                                <th class="py-3 px-4 text-left">2022</th>
+                                <th class="py-3 px-4 text-left">2023</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="py-3 px-4 font-medium">Harga Purata Rumah Teres (RM)</td>
+                                <td class="py-3 px-4">450,000</td>
+                                <td class="py-3 px-4">465,000</td>
+                                <td class="py-3 px-4">480,000</td>
+                                <td class="py-3 px-4">495,000</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 font-medium">Harga Purata Kondominium (RM)</td>
+                                <td class="py-3 px-4">380,000</td>
+                                <td class="py-3 px-4">385,000</td>
+                                <td class="py-3 px-4">390,000</td>
+                                <td class="py-3 px-4">400,000</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 font-medium">Kadar Kekosongan (%)</td>
+                                <td class="py-3 px-4">35%</td>
+                                <td class="py-3 px-4">32%</td>
+                                <td class="py-3 px-4">28%</td>
+                                <td class="py-3 px-4">25%</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 font-medium">Hasil Sewa Tahunan (%)</td>
+                                <td class="py-3 px-4">3.8%</td>
+                                <td class="py-3 px-4">3.9%</td>
+                                <td class="py-3 px-4">4.1%</td>
+                                <td class="py-3 px-4">4.2%</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 font-medium">Transaksi Hartanah (Bilangan)</td>
+                                <td class="py-3 px-4">1,250</td>
+                                <td class="py-3 px-4">1,420</td>
+                                <td class="py-3 px-4">1,680</td>
+                                <td class="py-3 px-4">1,850</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Sumber: Jabatan Penilaian dan Perkhidmatan Harta (JPPH) & NAPIC</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-700 mb-3">Sumber Rujukan</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            <div>
+                                <p class="font-medium">Laporan Pasaran Harta 2023</p>
+                                <p class="text-sm text-gray-600">Pusat Maklumat Harta Tanah Negara (NAPIC)</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            <div>
+                                <p class="font-medium">Pelan Pembangunan Sepang 2035</p>
+                                <p class="text-sm text-gray-600">Majlis Perbandaran Sepang</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            <div>
+                                <p class="font-medium">Laporan Ekonomi Selangor 2023</p>
+                                <p class="text-sm text-gray-600">Unit Perancang Ekonomi Negeri Selangor</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            <div>
+                                <p class="font-medium">Kajian Pasaran Hartanah Malaysia 2023</p>
+                                <p class="text-sm text-gray-600">Knight Frank Malaysia</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            <div>
+                                <p class="font-medium">Pelan Induk KLIA Aeropolis</p>
+                                <p class="text-sm text-gray-600">Malaysia Airports Holdings Berhad</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-700 mb-3">Metodologi Kajian</h3>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <p class="mb-3">Laporan ini disediakan menggunakan metodologi berikut:</p>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                            <li>Analisis data sekunder dari sumber rasmi kerajaan dan laporan industri</li>
+                            <li>Temu bual dengan 15 pakar industri hartanah dan perancang bandar</li>
+                            <li>Kajian lapangan di kawasan utama Sepang</li>
+                            <li>Analisis perbandingan dengan kawasan pembangunan serupa di Lembah Klang</li>
+                            <li>Pemodelan ekonometrik untuk unjuran harga dan permintaan</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <h3 class="text-lg font-semibold text-blue-700 mb-3">Limitasi Kajian</h3>
+                        <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-100">
+                            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                                <li>Data terkini mungkin terjejas oleh kesan pandemik COVID-19</li>
+                                <li>Beberapa projek pembangunan masih dalam peringkat perancangan dan mungkin tertakluk kepada perubahan</li>
+                                <li>Unjuran ekonomi tertakluk kepada ketidakpastian global dan perubahan dasar kerajaan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                <h3 class="text-xl font-semibold text-blue-800 mb-4">Lampiran Tambahan</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-4 rounded-lg border border-blue-100">
+                        <h4 class="font-medium text-blue-700 mb-3">Projek Infrastruktur Utama di Sepang (2023-2028)</h4>
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full">
+                                <thead class="bg-blue-50">
+                                    <tr>
+                                        <th class="py-2 px-3 text-left text-xs font-medium text-blue-700">Projek</th>
+                                        <th class="py-2 px-3 text-left text-xs font-medium text-blue-700">Jangka Masa</th>
+                                        <th class="py-2 px-3 text-left text-xs font-medium text-blue-700">Impak</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr>
+                                        <td class="py-2 px-3 text-sm">Sambungan MRT Laluan 3</td>
+                                        <td class="py-2 px-3 text-sm">2024-2027</td>
+                                        <td class="py-2 px-3 text-sm">Tinggi</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-3 text-sm">KLIA Aeropolis Fasa 2</td>
+                                        <td class="py-2 px-3 text-sm">2023-2026</td>
+                                        <td class="py-2 px-3 text-sm">Sangat Tinggi</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-3 text-sm">Lebuhraya SKLIA</td>
+                                        <td class="py-2 px-3 text-sm">2023-2025</td>
+                                        <td class="py-2 px-3 text-sm">Sederhana</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-3 text-sm">Hospital Sepang</td>
+                                        <td class="py-2 px-3 text-sm">2024-2026</td>
+                                        <td class="py-2 px-3 text-sm">Sederhana</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-4 rounded-lg border border-blue-100">
+                        <h4 class="font-medium text-blue-700 mb-3">Perbandingan Harga Hartanah dengan Kawasan Berdekatan</h4>
+                        <div class="chart-container">
+                            <canvas id="priceComparisonChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8 px-4 md:px-12">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">Laporan Analisa Hartanah Sepang</h3>
+                    <p class="text-blue-200">Disediakan oleh Jabatan Analisa Hartanah</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-blue-200 mb-1">Untuk maklumat lanjut:</p>
+                    <p class="font-semibold">info@analisahartanah.com.my</p>
+                    <p class="font-semibold">+603-8888-7777</p>
+                </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-blue-800 text-center text-blue-300 text-sm">
+                <p>© <span id="current-year"></span> Jabatan Analisa Hartanah. Hak Cipta Terpelihara.</p>
+                <p class="mt-1">Laporan ini adalah untuk tujuan maklumat sahaja dan tidak boleh dianggap sebagai nasihat pelaburan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Set current date and year
+        document.addEventListener('DOMContentLoaded', function() {
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('current-date').textContent = new Date().toLocaleDateString('ms-MY', options);
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Risk Chart
+            const riskCtx = document.getElementById('riskChart').getContext('2d');
+            const riskChart = new Chart(riskCtx, {
+                type: 'radar',
+                data: {
+                    labels: [
+                        'Kebergantungan pada Sektor Penerbangan',
+                        'Bekalan Berlebihan',
+                        'Kekurangan Kemudahan Awam',
+                        'Ketidakstabilan Ekonomi',
+                        'Persaingan dari Kawasan Lain'
+                    ],
+                    datasets: [{
+                        label: 'Tahap Risiko',
+                        data: [85, 70, 65, 75, 60],
+                        backgroundColor: 'rgba(220, 38, 38, 0.2)',
+                        borderColor: 'rgba(220, 38, 38, 0.8)',
+                        pointBackgroundColor: 'rgba(220, 38, 38, 1)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgba(220, 38, 38, 1)'
+                    }]
+                },
+                options: {
+                    scales: {
+                        r: {
+                            beginAtZero: true,
+                            max: 100,
+                            ticks: {
+                                stepSize: 20
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Price Projection Chart
+            const projectionCtx = document.getElementById('priceProjectionChart').getContext('2d');
+            const projectionChart = new Chart(projectionCtx, {
+                type: 'line',
+                data: {
+                    labels: ['2023', '2024', '2025', '2026', '2027', '2028'],
+                    datasets: [
+                        {
+                            label: 'Rumah Teres',
+                            data: [495000, 515000, 535000, 560000, 585000, 615000],
+                            borderColor: 'rgba(16, 185, 129, 1)',
+                            backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                            tension: 0.3,
+                            fill: true
+                        },
+                        {
+                            label: 'Kondominium',
+                            data: [400000, 412000, 425000, 440000, 455000, 470000],
+                            borderColor: 'rgba(59, 130, 246, 1)',
+                            backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                            tension: 0.3,
+                            fill: true
+                        },
+                        {
+                            label: 'Hartanah Industri (per sq ft)',
+                            data: [380, 395, 415, 440, 465, 490],
+                            borderColor: 'rgba(139, 92, 246, 1)',
+                            backgroundColor: 'rgba(139, 92, 246, 0.1)',
+                            tension: 0.3,
+                            fill: true
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            title: {
+                                display: true,
+                                text: 'Harga (RM)'
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Area Comparison Chart
+            const areaCtx = document.getElementById('areaComparisonChart').getContext('2d');
+            const areaChart = new Chart(areaCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Cyberjaya Selatan', 'Salak Tinggi', 'KLIA Aeropolis'],
+                    datasets: [
+                        {
+                            label: 'Potensi Pertumbuhan (%)',
+                            data: [15, 12, 18],
+                            backgroundColor: 'rgba(16, 185, 129, 0.7)'
+                        },
+                        {
+                            label: 'Pulangan Pelaburan Dijangka (%)',
+                            data: [6.5, 5.8, 7.2],
+                            backgroundColor: 'rgba(59, 130, 246, 0.7)'
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Peratus (%)'
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Price Comparison Chart
+            const priceCompCtx = document.getElementById('priceComparisonChart').getContext('2d');
+            const priceCompChart = new Chart(priceCompCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Sepang', 'Cyberjaya', 'Putrajaya', 'Nilai', 'Dengkil'],
+                    datasets: [
+                        {
+                            label: 'Harga Purata Rumah Teres (RM\'000)',
+                            data: [495, 750, 850, 450, 480],
+                            backgroundColor: 'rgba(59, 130, 246, 0.7)'
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Harga (RM\'000)'
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94eaa82850029d0b',t:'MTc0OTc0NTAzMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
